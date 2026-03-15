@@ -1,0 +1,47 @@
+GET: Array
+(
+    [order_id] => 138
+    [product_name] => Unknown Product
+)
+GET: Array
+(
+    [order_id] => 138
+    [product_name] => Unknown Product
+)
+GET: Array
+(
+    [order_id] => 138
+    [product_name] => Unknown Product
+)
+GET: Array
+(
+)
+POST: Array
+(
+    [rating] => 5
+    [order_id] => 138
+    [product_id] => 
+)
+GET: Array
+(
+)
+POST: Array
+(
+    [rating] => 5
+    [order_id] => 138
+    [product_id] => 
+)
+GET: Array
+(
+    [order_id] => 138
+    [product_name] => Unknown Product
+)
+GET: Array
+(
+)
+POST: Array
+(
+    [rating] => 5
+    [order_id] => 138
+    [product_id] => 
+)
