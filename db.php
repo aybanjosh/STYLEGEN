@@ -1,17 +1,15 @@
 <?php
-$host = 'localhost'; // Your database host
-$username = 'root'; // Your database username
-$password = ''; // Your database password
-$database = 'Database'; // Your database name
+$host = getenv('DB_HOST');
+$db   = getenv('DB_NAME');
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASS');
+$port = getenv('DB_PORT') ?: 3306;
 
-// Create a connection
-$connection = mysqli_connect($host, $username, $password, $database);
+$conn = new mysqli($host, $user, $pass, $db, $port);
 
-// Check connection
-if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
 }
-
 // Optionally set the character set to UTF-8 for proper encoding of special characters
 mysqli_set_charset($connection, "utf8");
 
